@@ -1,0 +1,581 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* .lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  } */
+  /* .lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  } */
+header{
+
+background: #f6f9f9;
+
+padding: 15px 0px;
+}
+.logo{
+
+width: 20%;
+}
+.logo img{
+
+}
+.menu{width: 50%;}
+.menu ul{
+    
+display: flex;
+    
+justify-content: end;
+    
+list-style: none;
+}
+.menu ul li {
+    
+}
+.menu ul li a{
+    font-family: "Lato", sans-serif;
+text-decoration: none;
+    
+text-transform: uppercase;
+    
+margin-left: 60px;
+    
+color: #2d3950;
+}
+.header_wrapper{
+    
+width: 80%;
+    
+margin: auto;
+    
+display: flex;
+    
+justify-content: space-between;
+    
+align-items: center;
+}
+.banner{
+
+position: relative;
+}
+.banner img{
+    width: 100%;
+}
+.banner_content{
+
+position: absolute;
+
+top: 50%;
+
+left: 50%;
+
+transform: translate(-50%, -50%);
+
+text-align: center;
+}
+.banner_content h1{
+    font-family: "Lato", sans-serif;
+color: #fff;
+    
+font-size: 110px;
+    
+font-weight: 800;
+    
+/* line-height: 100px; */
+    
+text-transform: uppercase;
+}
+.banner_content span{
+    
+display: block;
+    
+height: 2px;
+    
+width: 100%;
+    
+background: #15a4fa;
+}
+.banner_content p{
+    font-family: "Lato", sans-serif;
+color: #fff;
+    
+padding: 15px 0 30px;
+    
+font-size: 16px;
+}
+.banner_content button{
+    font-family: "Lato", sans-serif;
+background: transparent;
+    
+border: none;
+    
+border: 2px solid #15a4fa;
+    
+padding: 10px 15px;
+    
+color: #fff;
+    
+text-transform: capitalize;
+    
+border-radius: 5%;
+    
+font-size: 16px;
+transition: .4s all ease-in-out;
+cursor: pointer;
+}
+.banner_content button:hover{
+    background-color: #fff;
+    color: #15a4fa;
+    border-color: #fff;
+    
+}
+.icon{
+    
+position: absolute;
+    
+top: 85%;
+    
+left: 50%;
+    
+color: #fff;
+    
+transform: translateX(-50%);
+/* animation: up_down 3s linear infinite; */
+animation: down 1s linear infinite alternate;
+
+}
+
+@keyframes down{
+    0%{
+        top: 85%;
+    }
+    100%{
+        top: 90%;
+    }
+    0%{
+        color: #15a4fa;
+    }
+    10%{
+        color: #f6f9f9;
+    }
+    20%{
+        color: #fff;
+    }
+    30%{
+        color: #15a4fa;
+    }
+    40%{
+        color: #f6f9f9;
+    }
+    50%{
+        color: #fff;
+    }
+    60%{
+        color: #15a4fa;
+    }
+    70%{
+        color: #f6f9f9;
+    }
+    80%{
+        color: #fff;
+    }
+    90%{
+        color: #15a4fa;
+    }
+    100%{
+        color: #fff;
+    }
+}
+
+.simple_section{
+
+background-color: #f6f9f9;
+}
+.simple_wrapper{
+
+width: 80%;
+
+margin: auto;
+
+padding: 45px 0;
+
+text-align: center;
+}
+.simple_wrapper h2{
+    font-family: "Lato", sans-serif;
+font-size: 40px;
+    
+color: #2d3950;
+    
+font-weight: 600;
+    
+margin-bottom: 20px;
+}
+.simple_wrapper p{
+    font-family: "Lato", sans-serif;
+    color: #aeafaf;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+}
+.feature_section{width: 80%;margin: auto;display: flex;justify-content: space-between;text-align: center;padding: 80px 0;}
+.feature_wrapper{
+
+width: 30%;
+}
+.feature_wrapper h3{
+
+font-size: 24px;
+
+color: #2d3950;
+
+font-weight: 600;
+
+padding: 20px 0;
+}
+.feature_wrapper p{
+
+color: #999999;
+
+font-size: 16px;
+}
+
+.feature_icon{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,48baff+50,5fc3ff+50,5fc3ff+99 */
+    background: linear-gradient(to right,  #48baff 0%,#48baff 50%,#5fc3ff 50%,#5fc3ff 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+
+    color: #fff;
+}
+.feature_icon i{
+    font-size: 25px;
+}
+.feature_icon:hover{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5fc3ff+0,5fc3ff+50,48baff+50,48baff+50,48baff+100 */
+background: linear-gradient(to right,  #5fc3ff 0%,#5fc3ff 50%,#48baff 50%,#48baff 50%,#48baff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+
+}
+.work_section{
+
+margin: 40px 0 50px 0;
+}
+.work_wrapper{
+
+background-color: #f6f9f9;
+}
+.work_heading{
+
+text-align: center;
+
+padding: 25px 0px;
+}
+.work_heading h1{
+    
+font-size: 40px;
+    
+font-weight: 600;
+    
+color: #2d3950;
+    
+padding: 10px 0 15px;
+}
+.work_heading p{
+    
+font-size: 16px;
+    
+color: #2d3950;
+    
+margin-bottom: 15px;
+}
+.gallery{
+
+width: 80%;
+
+margin: auto;
+
+display: flex;
+
+flex-wrap: wrap;
+
+justify-content: space-between;
+}
+.gallery_item{
+
+width: 32%;
+
+margin-bottom: 12px;
+
+position: relative;
+}
+.gallery_item::after{
+    content:'';
+    height: 98%;
+    width: 0%;
+    background-color: #15a4fa;
+    left: 0%;
+    top: 0%;
+    position: absolute;
+    opacity: .5;
+    transition: .4s all ease-in-out;
+}
+/* .gallery_item::after{
+    content:'';
+    height: 100%;
+    width: 0;
+    background-color: #15a4fa;
+    right: 0;
+    top: 0;
+    position: absolute;
+    opacity: .5;
+    transition: .4s all ease-in-out;
+
+} */
+.gallery_item:hover::after{
+    width:100%;
+}
+/* .gallery_item:hover::after{
+    width:50%;
+} */
+.gallery_item img{
+    
+width: 100%;
+}
+.gallery_item ul{
+
+position: absolute;
+
+top: 70%;
+
+left: 50%;
+
+transform: translate(-50%, -50%);
+
+list-style: none;
+
+display: flex;
+
+opacity: 0;
+
+transition: .4s all ease-in-out;
+
+z-index: 1;
+}
+.gallery_item ul li{
+    
+color: red;
+    
+height: 30px;
+    
+width: 30px;
+    
+line-height: 30px;
+    
+border: 1px solid white;
+    
+text-align: center;
+    
+margin: 0 5px;
+}
+.gallery_item ul li a{
+    color: #fff;
+}
+.gallery_item ul li i{
+    
+}
+.gallery_item:hover ul{
+    opacity: 1;
+    top: 50%;
+}
+.contact_section{
+    background-image: url(../images/contract_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0px;
+    position: relative;
+    z-index: 0;
+}
+.contact_section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    background-color: #2d3950;
+    z-index: -1;
+}
+.contact_form{
+
+color: #fff;
+
+width: 30%;
+
+margin: auto;
+
+text-align: center;
+}
+
+.contact_form h1{
+    
+font-size: 45px;
+    
+font-weight: 600;
+    
+font-family: lato;
+}
+.contact_form p{
+    
+font-size: 16px;
+    
+font-weight: 400;
+    
+margin-top: 5px;
+    
+font-family: lato;
+}
+form input{
+
+width: 95%;
+
+background: transparent;
+
+border: none;
+
+border: 1px solid #999;
+
+padding: 10px 0 10px 10px;
+
+margin-bottom: 15px;
+color: #999;
+}
+form{
+    margin-top: 50px;
+}
+form input::placeholder{
+    color: #999;
+}
+form textarea{
+    
+width: 95%;
+    
+background: transparent;
+    
+border: none;
+    
+border: 1px solid#999;
+    
+padding: 10px 0 0 10px;
+color: #999;
+}
+form textarea::placeholder{
+    color: #999;
+}
+
+.wrapper{
+
+display: flex;
+
+justify-content: space-between;
+
+/* align-items: center; */
+
+margin-top: 20px;
+}
+.check{
+
+display: flex;
+}
+.check input{
+    margin-top: 10px;
+}
+.check p{
+    
+margin-left: 10px;
+}
+.submit input{
+
+background: transparent;
+
+padding: 10px 30px;
+
+color: #fff;
+
+border: 1px solid #fff;
+margin: 0;
+}
+footer{
+
+background: #f5f5f5;
+
+padding: 29px 0;
+}
+.footer_wrapper{
+
+width: 80%;
+
+margin: auto;
+
+display: flex;
+
+justify-content: space-between;
+
+align-items: center;
+}
+.copyright{
+
+}
+.copyright p{
+
+font-size: 16px;
+
+font-weight: 400;
+
+font-family: lato;
+
+color: #999;
+}
+.footer_icon{
+
+display: flex;
+}
+.footer_icon ul{
+
+list-style: none;
+
+margin-left: 15px;
+}
+.footer_icon ul li{
+
+height: 30px;
+
+width: 30px;
+
+line-height: 30px;
+
+text-align: center;
+
+border: 1px solid #999;
+
+background: #15a4fa;
+}
+.footer_icon ul li a{
+
+color: #fff;
+}
+.footer_icon ul li a i{
+
+}
